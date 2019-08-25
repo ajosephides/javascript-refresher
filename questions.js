@@ -6,7 +6,11 @@ var selectElementsStartingWithA = function(array) {
 }
 
 var selectElementsStartingWithVowel = function(array) {
-  return 'Write your method here';
+  var vowels = ['a','e','i','o','u']
+  var vowelWords = array.filter(word => {
+    return vowels.includes(word[0].toLowerCase())
+  })
+  return vowelWords;
 }
 
 var removeNullElements = function(array) {
