@@ -1,9 +1,8 @@
 var selectElementsStartingWithA = function(array) {
-  return 'Write your method here';
-}
-
-var selectElementsStartingWithA = function(array) {
-  return 'Write your method here';
+  var aWords = array.filter( word => {
+    return word[0].toLowerCase() === 'a'
+  })
+  return aWords;
 }
 
 var selectElementsStartingWithVowel = function(array) {
