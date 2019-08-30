@@ -107,7 +107,7 @@ var longestWord = function(array) {
 }
 
 var sumNumbers = function(array) {
-  return 'Write your method here';
+  return array.reduce((acc, val) => {return  acc + val});
 }
 
 var repeatElements = function(array) {
