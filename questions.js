@@ -130,7 +130,11 @@ var getElementsUntilGreaterThanFive = function(array) {
 }
 
 var convertArrayToObject = function(array) {
-  return 'Write your method here';
+  let object = {}
+  for(let i = 0; i < array.length -1; i = i+2){
+    object[array[i]] = array[i+1];
+  }
+  return object;
 }
 
 var getAllLetters = function(array) {
