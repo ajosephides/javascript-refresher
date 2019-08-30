@@ -125,7 +125,8 @@ var calculateAverage = function(array) {
 }
 
 var getElementsUntilGreaterThanFive = function(array) {
-  return 'Write your method here';
+  let five = array.filter((value, index) => { return index <= 5 })
+  return five;
 }
 
 var convertArrayToObject = function(array) {
