@@ -61,7 +61,17 @@ var addElementToBeginning = function(array, element) {
 }
 
 var sortByLastLetter = function(array) {
-  return 'Write your method here';
+  let sortedByLast = array.sort((a,b) => {
+    if(a[a.length - 1] > b[b.length - 1]){
+      return 1
+    } else if(a[a.length - 1] < b[b.length - 1]){
+      return -1
+    } else {
+      return 0
+    }
+
+  })
+  return sortedByLast;
 }
 
 var getFirstHalf = function(string) {
