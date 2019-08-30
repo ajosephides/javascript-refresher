@@ -56,7 +56,8 @@ var allElementsExceptFirstThree = function(array) {
 }
 
 var addElementToBeginning = function(array, element) {
-  return 'Write your method here';
+  array.unshift(element)
+  return array;
 }
 
 var sortByLastLetter = function(array) {
