@@ -93,7 +93,6 @@ var numberOfPalindromes = function(array) {
 }
 
 var shortestWord = function(array) {
-  console.log(array)
   let sortedArray = array.sort((a,b) => {
     return a.length - b.length
   })
@@ -101,7 +100,10 @@ var shortestWord = function(array) {
 }
 
 var longestWord = function(array) {
-  return 'Write your method here';
+  let sortedArray = array.sort((a,b) => {
+    return b.length - a.length
+  })  
+  return sortedArray[0];
 }
 
 var sumNumbers = function(array) {
