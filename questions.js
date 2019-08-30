@@ -120,7 +120,8 @@ var stringToNumber = function(string) {
 }
 
 var calculateAverage = function(array) {
-  return 'Write your method here';
+  let sum = array.reduce((a,b) => {return a + b})
+  return (sum/array.length);
 }
 
 var getElementsUntilGreaterThanFive = function(array) {
