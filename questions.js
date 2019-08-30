@@ -84,7 +84,12 @@ var makeNegative = function(number) {
 }
 
 var numberOfPalindromes = function(array) {
-  return 'Write your method here';
+  let counter = 0;
+  array.forEach(word => {
+    let reverseWord = word.split("").reverse().join("");
+    word === reverseWord ? counter +=1 : counter += 0
+  })
+  return counter;
 }
 
 var shortestWord = function(array) {
