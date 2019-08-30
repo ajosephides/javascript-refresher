@@ -111,7 +111,8 @@ var sumNumbers = function(array) {
 }
 
 var repeatElements = function(array) {
-  return 'Write your method here';
+  let copyArray = array.slice()
+  return array.concat(copyArray);
 }
 
 var stringToNumber = function(string) {
