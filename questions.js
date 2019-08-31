@@ -196,15 +196,17 @@ var getDomainName = function(string) {
 }
 
 var titleize = function(string) {
+  // console.log(string)
   return 'Write your method here';
 }
 
 var checkForSpecialCharacters = function(string) {
+  // console.log(string)
   return 'Write your method here';
 }
 
 var squareRoot = function(number) {
-  return 'Write your method here';
+  return Math.sqrt(number);
 }
 
 var factorial = function(number) {
