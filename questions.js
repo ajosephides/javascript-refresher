@@ -138,8 +138,6 @@ var convertArrayToObject = function(array) {
 }
 
 var getAllLetters = function(array) {
-  console.log(array)
-  let word = 'cat'
   let letters = array.flatMap(word => {
     return word.split("")
   })
@@ -167,7 +165,21 @@ var sumKeysAndValues = function(object) {
 }
 
 var removeCapitals = function(string) {
-  return 'Write your method here';
+  let isUpperCase = letter => {
+    if(letter === ' '){
+      return false;
+    } else {
+      return letter.toUpperCase() === letter ? true : false
+    }
+  }
+
+  let stripUpper = string.split('')
+  .map(letter => {
+    return isUpperCase(letter) ? null : letter
+  })
+  .join('')
+
+  return stripUpper;
 }
 
 var roundUp = function(number) {
