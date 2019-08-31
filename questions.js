@@ -210,7 +210,14 @@ var squareRoot = function(number) {
 }
 
 var factorial = function(number) {
-  return 'Write your method here';
+  let fact = number => {
+    if(number === 0){
+      return 1;
+    } else{
+      return number * fact(number - 1);
+    }
+  }
+  return fact(number);
 }
 
 var findAnagrams = function(string) {
