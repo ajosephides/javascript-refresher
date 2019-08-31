@@ -187,7 +187,7 @@ var roundUp = function(number) {
 }
 
 var formatDateNicely = function(date) {
-  return 'Write your method here';
+  return date.toLocaleDateString();
 }
 
 var getDomainName = function(string) {
