@@ -148,7 +148,12 @@ var getAllLetters = function(array) {
 }
 
 var swapKeysAndValues = function(object) {
-  return 'Write your method here';
+  let swapObject = {}
+  Object.keys(object)
+  .map(key =>{
+    swapObject[object[key]] = key;
+  })  
+  return swapObject;
 }
 
 var sumKeysAndValues = function(object) {
