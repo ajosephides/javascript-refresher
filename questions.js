@@ -157,7 +157,13 @@ var swapKeysAndValues = function(object) {
 }
 
 var sumKeysAndValues = function(object) {
-  return 'Write your method here';
+  let total = Object.keys(object)
+  .map( key => {
+    return parseInt(key) + parseInt(object[key])
+  })
+  let finalTotal = total.reduce((a,b) => { return a + parseInt(b) })
+
+  return finalTotal;
 }
 
 var removeCapitals = function(string) {
