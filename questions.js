@@ -183,7 +183,7 @@ var removeCapitals = function(string) {
 }
 
 var roundUp = function(number) {
-  return 'Write your method here';
+  return Math.ceil(number);
 }
 
 var formatDateNicely = function(date) {
