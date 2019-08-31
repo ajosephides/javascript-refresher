@@ -191,7 +191,8 @@ var formatDateNicely = function(date) {
 }
 
 var getDomainName = function(string) {
-  return 'Write your method here';
+  let splitString = string.split('@')
+  return splitString[splitString.length - 1].split('.com')[0];
 }
 
 var titleize = function(string) {
