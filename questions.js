@@ -138,7 +138,13 @@ var convertArrayToObject = function(array) {
 }
 
 var getAllLetters = function(array) {
-  return 'Write your method here';
+  console.log(array)
+  let word = 'cat'
+  let letters = array.flatMap(word => {
+    return word.split("")
+  })
+  let orderLetters = Array.from(new Set(letters.slice().sort()))
+  return orderLetters;
 }
 
 var swapKeysAndValues = function(object) {
