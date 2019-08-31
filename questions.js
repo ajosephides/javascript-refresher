@@ -221,11 +221,27 @@ var factorial = function(number) {
 }
 
 var findAnagrams = function(string) {
+// think this will fail because of async nature in JS.
+  // let anagram = (avail, chosen) =>{
+  //   if(avail.length === 0){
+  //     return chosen
+  //   } else{
+  //     for(let i = 0; i < avail.length; i++){
+  //       let char = avail.slice(i, i + 1)
+  //       let rest = avail.slice(0, i) + avail.slice(i + 1);
+  //       anagram(rest, chosen + char)
+  //     }
+  //   }
+  // }
+  // let word = anagram(string)
+
   return 'Write your method here';
 }
 
 var convertToCelsius = function(number) {
-  return 'Write your method here';
+  let convert =  Math.round((number - 32)*(5/9))
+  
+  return convert;
 }
 
 var letterPosition = function(array) {
